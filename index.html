@@ -1,0 +1,35 @@
+<html>
+<head>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<script>
+function draw(){
+    var ctx = document.getElementById('my_canvas').getContext('2d');
+    // shadowColor = color || hex || rgba()
+    // shadowOffsetX = positive or negative number
+    // shadowOffsetY = positive or negative number
+    // shadowBlur = positive number
+    ctx.fillStyle = '#FC0';
+    ctx.fillRect(50, 50, 100, 100);
+    ctx.shadowColor = 'rgba(0,0,0,1)';
+    ctx.shadowOffsetX = 2;
+    ctx.shadowOffsetY = 2;
+    ctx.shadowBlur = 3;
+    ctx.fillRect(200, 50, 100, 100);
+}
+window.onload = draw;
+</script>
+</head>
+<body>
+  
+  <h3 style="text-align: center">Canvas | Rendering Shadows </h3>
+  
+<canvas id="my_canvas" width="500" height="350"></canvas>
+  
+  <div style="text-align: center">
+    <h5><a href="http://www.eleftheriabatsou.com" target="_blank">Eleftheria Batsou</a> | <a href="http://codepen.io/EleftheriaBatsou" target="_blank">Projects</a></h5>
+  </div> <!-- end footer -->
+  
+</body>  
+</html>
